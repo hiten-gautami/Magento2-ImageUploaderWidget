@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="elsnertech_custom_text_widget" class="Elsnertech\ImageUploaderWidget\Block\Widget\PageWidget">
+        <label>Elsnertech ImageUploader Widget</label>
+        <description>Elsnertech Custom Widget For Image.</description>
+        <parameters>
+            <parameter name="elsnertech_image" xsi:type="block" visible="true" required="false">
+                <label translate="true">Image Uploader</label>
+                <block class="Elsnertech\ImageUploaderWidget\Block\Adminhtml\Widget\ImageChooser">
+                    <data>
+                        <item name="button" xsi:type="array">
+                            <item name="open" xsi:type="string">Choose Image...</item>
+                        </item>
+                    </data>
+                </block>
+            </parameter>
+        </parameters>
+   </widget>
+</widgets>
